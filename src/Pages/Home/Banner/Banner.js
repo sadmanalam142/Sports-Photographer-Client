@@ -13,7 +13,7 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption style={{color: 'green'}}>
-                        <h3>My name is Edward Rose</h3>
+                        <h3>I am Andrew Wise</h3>
                         <p>I am a proffesional sports photographer. It's been 5 years i am doing the job. In this short period i have gain a lot experience and got some award too</p>
                     </Carousel.Caption>
                 </Carousel.Item>

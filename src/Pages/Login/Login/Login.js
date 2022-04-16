@@ -4,7 +4,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../../Shared/Loading/Loading';
-import SigningMethod from '../../../Shared/SingingMethod/SigningMethod';
+import SigningMethod from '../../../Shared/SigningMethod/SigningMethod';
 
 const Login = () => {
     const [email, setEmail] = useState('');

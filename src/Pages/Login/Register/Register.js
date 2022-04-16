@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { sendEmailVerification } from 'firebase/auth';
-import SigningMethod from '../../../Shared/SingingMethod/SigningMethod';
+import SigningMethod from '../../../Shared/SigningMethod/SigningMethod';
 
 const Register = () => {
     const [name, setName] = useState('');

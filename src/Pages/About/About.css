@@ -1,0 +1,17 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 577px) {
+    .about-container{
+        display: block;
+        margin: 5 0;
+    }
+    .about-container img{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
