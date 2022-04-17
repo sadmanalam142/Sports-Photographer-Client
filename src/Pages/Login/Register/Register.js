@@ -5,6 +5,8 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import auth from '../../../firebase.init';
 import { sendEmailVerification } from 'firebase/auth';
 import SigningMethod from '../../../Shared/SigningMethod/SigningMethod';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
     const [name, setName] = useState('');
@@ -48,7 +50,7 @@ const Register = () => {
         event.preventDefault();
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
-        alert('Updated profile');
+        toast('Updated profile');
     }
 
     return (
@@ -79,6 +81,7 @@ const Register = () => {
                 </Form>
                 <p>Allready have an account? <Link className='text-decoration-none text-success' to='/login'>Login</Link></p>
             <SigningMethod></SigningMethod>
+            <ToastContainer></ToastContainer>
             </div>
         </div>
     );

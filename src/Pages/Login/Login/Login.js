@@ -5,6 +5,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../../Shared/Loading/Loading';
 import SigningMethod from '../../../Shared/SigningMethod/SigningMethod';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -53,7 +55,7 @@ const Login = () => {
 
     const handleResetPassword = async () => {
         await sendPasswordResetEmail(email);
-        alert('Sent email');
+        toast('Sent email');
     }
 
     return (
@@ -77,6 +79,7 @@ const Login = () => {
                 <p>New to Sports Photographer? <Link className='text-decoration-none text-success' to='/register'>Create an Account</Link></p>
                 <p>Forgot Password? <button disabled={!email} onClick={handleResetPassword} className='btn btn-link text-decoration-none text-danger mb-1'>reset password</button></p>
                 <SigningMethod></SigningMethod>
+                <ToastContainer></ToastContainer>
             </div>
         </div>
     );
