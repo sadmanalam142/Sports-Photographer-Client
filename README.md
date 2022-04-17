@@ -4,7 +4,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## what i have done in this project:
 * first i made a responsive navber on header component.
-* on the home component i displayed a banner
+* on the home component i displayed a banner and services.
+* then i made a footer and made login,register,signout route and protected the the checkout route.
+* then i ansered some question on the blogs route.
+* finally i introduced myself on the about route that's it.
+
+## what are the libary/framework have used in this project:
+* i have used react-bootstrap and simple bootstap framework to complete the project. what i mainly used is react libary to make the website easy to use and easy to write and read code.
 
 ## Available Scripts
 
