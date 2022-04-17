@@ -9,8 +9,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * then i ansered some question on the blogs route.
 * finally i introduced myself on the about route that's it.
 
-## what are the libary/framework have used in this project:
-* i have used react-bootstrap and simple bootstap framework to complete the project. what i mainly used is react libary to make the website easy to use and easy to write and read code.
+## what are the library/framework have used in this project:
+* i have used react-bootstrap and simple bootstap framework to complete the project. what i mainly used is react library to make the website easy to use and easy to write and read code.
 
 ## Available Scripts
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import photographer from '../../../images/photographer.jpg';
+import photographer1 from '../../../images/photographer1.jpg';
+import photographer2 from '../../../images/photographer2.jpg';
+import photographer3 from '../../../images/photographer3.jpg';
 
 const Banner = () => {
     return (
@@ -9,12 +11,34 @@ const Banner = () => {
                 <Carousel.Item>
                     <img height={500}
                         className="d-block w-100"
-                        src={photographer}
+                        src={photographer1}
                         alt="First slide"
                     />
-                    <Carousel.Caption style={{color: 'green'}}>
-                        <h3>I am Andrew Wise</h3>
-                        <p>I am a proffesional sports photographer. It's been 5 years i am doing the job. In this short period i have gain a lot experience and got some award too</p>
+                    <Carousel.Caption style={{ color: 'green' }}>
+                        <h3>Welcome to the sports photoprapher</h3>
+                        <p>Here you can book my services. To know about me you can go to about page.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img height={500}
+                        className="d-block w-100"
+                        src={photographer2}
+                        alt="First slide"
+                    />
+                    <Carousel.Caption style={{ color: 'green' }}>
+                        <h3>Welcome to the sports photoprapher</h3>
+                        <p>Here you can book my services. To know about me you can go to about page.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img height={500}
+                        className="d-block w-100"
+                        src={photographer3}
+                        alt="First slide"
+                    />
+                    <Carousel.Caption style={{ color: 'green' }}>
+                        <h3>Welcome to the sports photoprapher</h3>
+                        <p>Here you can book my services. To know about me you can go to about page.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

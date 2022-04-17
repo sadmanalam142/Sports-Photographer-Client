@@ -27,7 +27,7 @@ const Register = () => {
     let errorMessage;
 
     if(user){
-        navigate('/home')
+        navigate('/home');
     }
 
     if(error || updateError){

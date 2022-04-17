@@ -11,6 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [reset, setReset] = useState(false);
 
     const [
         signInWithEmailAndPassword,
@@ -54,8 +55,12 @@ const Login = () => {
     }
 
     const handleResetPassword = async () => {
-        await sendPasswordResetEmail(email);
-        toast('Sent email');
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+    }
+
+    const handleChecked = () => {
+        setReset(true);
     }
 
     return (
@@ -77,7 +82,9 @@ const Login = () => {
                     </Button>
                 </Form>
                 <p>New to Sports Photographer? <Link className='text-decoration-none text-success' to='/register'>Create an Account</Link></p>
-                <p>Forgot Password? <button disabled={!email} onClick={handleResetPassword} className='btn btn-link text-decoration-none text-danger mb-1'>reset password</button></p>
+
+                <p>Forgot Password? <button disabled={!email} onClick={handleResetPassword} className="btn btn-link text-decoration-none mb-1"> <span onClick={handleChecked} className={!reset ? 'text-danger' : 'text-success'}>Reset Password</span> </button></p>
+                
                 <SigningMethod></SigningMethod>
                 <ToastContainer></ToastContainer>
             </div>

@@ -12,7 +12,7 @@ const Header = () => {
         signOut(auth)
     }
     return (
-        <div>
+        <div className='header'>
             <Navbar style={{ backgroundColor: 'green' }} collapseOnSelect expand="lg" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
