@@ -71,7 +71,7 @@ const Register = () => {
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        <Form.Check className={!agree && 'text-danger'} onClick={handleChecked} type="checkbox" label="Accept all terms and conditions" />
+                        <Form.Check className={!agree? 'text-danger' : 'text-success'} onClick={handleChecked} type="checkbox" label="Accept all terms and conditions" />
                     </Form.Group>
 
                     <p className='text-danger'>{errorMessage}</p>

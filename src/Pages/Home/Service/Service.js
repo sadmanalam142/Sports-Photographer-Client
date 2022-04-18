@@ -16,7 +16,7 @@ const Service = ({item}) => {
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>Price: ${price}</Card.Text>
                     <Card.Text>{description}</Card.Text>
-                    <Button onClick={navigateCheckout} variant="success">Book: {name}</Button>
+                    <Button onClick={navigateCheckout} variant="success">Book Now</Button>
                 </Card.Body>
             </Card>
         </div>
